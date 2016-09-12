@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="rYz-Kw-hRG">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Base Navigation Controller-->
+        <scene sceneID="ZOZ-mS-bSD">
+            <objects>
+                <navigationController id="rYz-Kw-hRG" customClass="BaseNavigationController" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="KHZ-ln-aoA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="L2p-py-xNj" kind="relationship" relationship="rootViewController" id="v1K-5W-iCf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XFg-wr-GeG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-103" y="253"/>
+        </scene>
+        <!--Cinema View Controller-->
+        <scene sceneID="dVc-UQ-Bis">
+            <objects>
+                <viewController id="L2p-py-xNj" customClass="CinemaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FlE-wM-Eu7"/>
+                        <viewControllerLayoutGuide type="bottom" id="zyF-We-8bs"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MqF-mn-mGM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="12r-kC-bxO">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="L2p-py-xNj" id="L7N-oD-w3B"/>
+                                    <outlet property="delegate" destination="L2p-py-xNj" id="mBf-wn-ZZ2"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="12r-kC-bxO" firstAttribute="leading" secondItem="MqF-mn-mGM" secondAttribute="leadingMargin" constant="-20" id="1WN-Nk-lJf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="12r-kC-bxO" secondAttribute="trailing" constant="-20" id="CU6-j7-xBV"/>
+                            <constraint firstItem="12r-kC-bxO" firstAttribute="top" secondItem="FlE-wM-Eu7" secondAttribute="bottom" constant="-64" id="TSZ-kr-yLh"/>
+                            <constraint firstItem="zyF-We-8bs" firstAttribute="top" secondItem="12r-kC-bxO" secondAttribute="bottom" id="f3P-bf-tsg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="8ej-Rf-Rjb"/>
+                    <connections>
+                        <outlet property="cinemaTableView" destination="12r-kC-bxO" id="znc-j9-ndE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7n-mf-pdw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="388" y="126"/>
+        </scene>
+    </scenes>
+</document>

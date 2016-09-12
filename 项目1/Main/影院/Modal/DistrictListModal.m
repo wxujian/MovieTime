@@ -1,0 +1,13 @@
+//
+//  DistrictListModal.m
+//  项目1
+//
+//  Created by yuanxuedao on 16/3/17.
+//  Copyright © 2016年 yuanxuedao. All rights reserved.
+//
+
+#import "DistrictListModal.h"
+
+@implementation DistrictListModal
+
+@end

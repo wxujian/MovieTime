@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopCell">
+            <rect key="frame" x="0.0" y="0.0" width="105" height="168"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="105" height="168"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="bed-Mj-jQU">
+                        <rect key="frame" x="0.0" y="0.0" width="105" height="150"/>
+                        <animations/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="iPM-P7-aXW"/>
+                        </constraints>
+                    </imageView>
+                    <view alpha="0.45000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0xO-Uy-kNV">
+                        <rect key="frame" x="0.0" y="130" width="105" height="20"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Cv9-0j-PDY"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这个杀手不太冷" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xLw-6I-tdO">
+                        <rect key="frame" x="0.0" y="130" width="105" height="20"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="YxV-Gc-srA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fww-pt-XR5" userLabel="StarView">
+                        <rect key="frame" x="0.0" y="150" width="90" height="18"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="90" id="bHH-BR-Ndd"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXP-ow-OHC">
+                        <rect key="frame" x="90" y="150" width="15" height="18"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="5AR-7n-WPP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="8"/>
+                        <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="bed-Mj-jQU" secondAttribute="trailing" id="7VB-9Q-5I9"/>
+                <constraint firstItem="xLw-6I-tdO" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="130" id="7kA-67-BO5"/>
+                <constraint firstItem="bed-Mj-jQU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="HSd-uc-smy"/>
+                <constraint firstItem="0xO-Uy-kNV" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="130" id="Mdx-na-ZK1"/>
+                <constraint firstItem="fww-pt-XR5" firstAttribute="top" secondItem="xLw-6I-tdO" secondAttribute="bottom" id="OjL-fz-BTO"/>
+                <constraint firstItem="fww-pt-XR5" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WC5-pL-gl3"/>
+                <constraint firstAttribute="bottom" secondItem="sXP-ow-OHC" secondAttribute="bottom" id="fe2-j5-ArW"/>
+                <constraint firstAttribute="trailing" secondItem="xLw-6I-tdO" secondAttribute="trailing" id="gOv-gN-fg5"/>
+                <constraint firstAttribute="bottom" secondItem="fww-pt-XR5" secondAttribute="bottom" id="iFh-lO-6bH"/>
+                <constraint firstItem="xLw-6I-tdO" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="kV2-6y-lDf"/>
+                <constraint firstItem="0xO-Uy-kNV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="m6x-kl-j5D"/>
+                <constraint firstAttribute="trailing" secondItem="sXP-ow-OHC" secondAttribute="trailing" id="oWZ-xL-YAe"/>
+                <constraint firstAttribute="trailing" secondItem="0xO-Uy-kNV" secondAttribute="trailing" id="tza-yY-OV6"/>
+                <constraint firstItem="bed-Mj-jQU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="uAC-7F-R6w"/>
+                <constraint firstItem="sXP-ow-OHC" firstAttribute="top" secondItem="xLw-6I-tdO" secondAttribute="bottom" id="yyq-CV-eH5"/>
+            </constraints>
+            <size key="customSize" width="105" height="170"/>
+            <connections>
+                <outlet property="postImgView" destination="bed-Mj-jQU" id="Sdz-M8-iZj"/>
+                <outlet property="scoreLabel" destination="sXP-ow-OHC" id="QZP-bl-Apf"/>
+                <outlet property="starView" destination="fww-pt-XR5" id="AgO-7s-d4Z"/>
+                <outlet property="titlelabel" destination="xLw-6I-tdO" id="L7p-xN-UUf"/>
+            </connections>
+            <point key="canvasLocation" x="199.5" y="206"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="1.png" width="79" height="81"/>
+    </resources>
+</document>
